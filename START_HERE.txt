@@ -1,0 +1,175 @@
+╔════════════════════════════════════════════════════════════════════════╗
+║          AZURE FABRIC LAKEHOUSE MEDALLION ARCHITECTURE                 ║
+║                      40-MINUTE FOCUSED ASSESSMENT                      ║
+╚════════════════════════════════════════════════════════════════════════╝
+
+📋 DOCUMENTATION REORGANIZED INTO TWO BUCKETS:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎓 FOR CANDIDATES (What to Read)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. START: README.md
+   → Click: "For Candidates: Start Here 👈"
+
+2. MAIN: CANDIDATE_README.md ⭐
+   ✓ Setup instructions (3 options, 3 min)
+   ✓ 4 hands-on tasks (40 min total)
+   ✓ Evaluation rubric (100 pts, pass 70+)
+   ✓ Common mistakes to avoid
+   ✓ FAQ & troubleshooting
+
+3. REFERENCE: COMMANDS.md
+   ✓ Quick command reference
+   ✓ Setup, test, debug commands
+
+4. CONTEXT: docs/ARCHITECTURE.md
+   ✓ Medallion architecture overview
+   ✓ Bronze → Silver → Gold pattern
+
+5. CONTEXT: docs/GOVERNANCE.md
+   ✓ Data governance framework
+   ✓ Task D reference material
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+👔 FOR INTERVIEWERS (What to Read)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. START: README.md
+   → Click: "For Interviewers: Start Here 👈"
+
+2. MAIN: INTERVIEWER_GUIDE.md ⭐
+   ✓ 40-minute timeline breakdown
+   ✓ Detailed scoring rubric (100 pts)
+   ✓ Interview execution checklist
+   ✓ Answer key for all 4 tasks
+   ✓ Q&A guide with expected answers
+   ✓ Common issues & solutions
+   ✓ Performance benchmarks
+   ✓ Scoring sheet
+   ✓ Post-interview guidance
+
+3. REFERENCE: COMMANDS.md
+   ✓ Setup & test commands
+   ✓ Debugging reference
+
+4. CONTEXT: CANDIDATE_README.md
+   ✓ See what candidate is working with
+   ✓ Same information they have
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⏱️ INTERVIEW TIMELINE (40 MINUTES)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Min 0-2:    Welcome & Setup
+Min 2-12:   Task A: Bronze Ingestion (10 min, PASS/FAIL)
+Min 12-24:  Task B: Debug Bugs (12 min, PASS/FAIL)
+Min 24-36:  Task C: Feature Implementation (12 min, PASS/FAIL)
+Min 36-42:  Task D: Governance (6 min, PASS/FAIL)
+Min 42-44:  Wrap-up (2 min)
+
+SCORING: PASS/FAIL per section
+─────────────────────────────────
+Overall Result:            PASS (all 4) or FAIL (any 1+)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚀 QUICK START
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Candidates:
+  1. git clone <repo-url>
+  2. cd inteview
+  3. python -m venv venv && source venv/bin/activate
+  4. pip install -r requirements.txt
+  5. pytest tests/ -v  (expect: 10 pass, 4 fail)
+  6. jupyter lab
+  7. Follow CANDIDATE_README.md
+
+Interviewers:
+  1. Clone repo & verify: pytest tests/ -v
+  2. Read INTERVIEWER_GUIDE.md
+  3. Share README.md + CANDIDATE_README.md with candidate (24h before)
+  4. Follow INTERVIEWER_GUIDE.md timeline during interview
+  5. Score using provided rubric
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✨ KEY FEATURES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ 40-minute focused interview (tight but achievable)
+✅ Clear documentation split (candidate vs interviewer)
+✅ 4 hands-on tasks (Bronze, Debug, Feature, Governance)
+✅ 2 intentional bugs in src/silver.py for Task B
+✅ 15 pytest tests (10 pass, 4 fail until bugs fixed)
+✅ 100-point scoring rubric with detailed criteria
+✅ Complete answer key for all tasks
+✅ Mock Semantic Kernel agent (no API keys needed)
+✅ Cross-platform compatible (Windows/Mac/Linux)
+✅ Runs completely offline
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📊 ASSESSMENT AREAS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Task A: Ingestion        → PySpark + Delta Lake skills
+Task B: Debugging        → Root cause analysis + test-driven approach
+Task C: Feature          → Window functions + SQL analytics
+Task D: Governance       → PII understanding + Purview knowledge
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📁 REPOSITORY STRUCTURE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Root Documentation:
+  ├── README.md                    ← Navigation hub (START HERE)
+  ├── CANDIDATE_README.md          ← For candidates
+  ├── INTERVIEWER_GUIDE.md         ← For interviewers
+  ├── COMMANDS.md                  ← Quick reference
+  └── REORGANIZATION_COMPLETE.md   ← Change summary
+
+Data & Notebooks:
+  ├── data/                        ← Sample CSVs (with quality issues)
+  ├── notebooks/                   ← 3 Jupyter notebooks
+  ├── src/                         ← Python modules
+  ├── tests/                       ← Pytest test suite
+  └── docs/                        ← Architecture & governance
+
+Configuration:
+  ├── requirements.txt             ← Python dependencies
+  ├── pytest.ini                   ← Test configuration
+  ├── .gitignore                   ← Git exclusions
+  └── .devcontainer/               ← VS Code container config
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+❓ QUESTIONS?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Candidates: Read CANDIDATE_README.md FAQ section
+Interviewers: Read INTERVIEWER_GUIDE.md Common Issues section
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎉 STATUS: READY FOR INTERVIEWS
+
+Next Steps:
+  1. Candidates: Open README.md → Click CANDIDATE_README.md link
+  2. Interviewers: Open README.md → Click INTERVIEWER_GUIDE.md link
+  3. Interview: Follow 40-minute timeline
+  4. Score: Use provided rubric (100 pts, pass 70+)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Duration: 40 minutes | Scoring: PASS/FAIL per section
+Role Assessed: Azure Fabric Data Engineer (Medallion Architecture)
+Difficulty: Intermediate-Advanced
+Requirements: Python 3.11+, PySpark 3.5.0, Delta Lake
+
+Overall Result: PASS (all 4 sections) or FAIL (any section fails)
